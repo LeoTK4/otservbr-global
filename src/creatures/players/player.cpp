@@ -293,6 +293,12 @@ int32_t Player::getWeaponSkill(const Item* item) const
 
 	WeaponType_t weaponType = item->getWeaponType();
 	switch (weaponType) {
+
+		case WEAPON_FIST: {
+			attackSkill = getSkillLevel(SKILL_FIST);
+			break;
+		}
+
 		case WEAPON_SWORD: {
 			attackSkill = getSkillLevel(SKILL_SWORD);
 			break;

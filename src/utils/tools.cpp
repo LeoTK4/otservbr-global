@@ -952,6 +952,7 @@ bool booleanString(const std::string& str)
 std::string getWeaponName(WeaponType_t weaponType)
 {
 	switch (weaponType) {
+		case WEAPON_FIST: return "fist";
 		case WEAPON_SWORD: return "sword";
 		case WEAPON_CLUB: return "club";
 		case WEAPON_AXE: return "axe";
@@ -1426,6 +1427,7 @@ std::string getObjectCategoryName(ObjectCategory_t category)
 		case OBJECTCATEGORY_CLUBS: return "Weapons: Clubs";
 		case OBJECTCATEGORY_DISTANCEWEAPONS: return "Weapons: Distance";
 		case OBJECTCATEGORY_SWORDS: return "Weapons: Swords";
+		case OBJECTCATEGORY_FISTS: return "Weapons: Fists";
 		case OBJECTCATEGORY_WANDS: return "Weapons: Wands";
 		case OBJECTCATEGORY_PREMIUMSCROLLS: return "Premium Scrolls";
 		case OBJECTCATEGORY_TIBIACOINS: return "Tibia Coins";

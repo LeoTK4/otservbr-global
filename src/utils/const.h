@@ -434,6 +434,7 @@ enum CreatureIcon_t {
 
 enum WeaponType_t : uint8_t {
 	WEAPON_NONE,
+	WEAPON_FIST,
 	WEAPON_SWORD,
 	WEAPON_CLUB,
 	WEAPON_AXE,
@@ -441,7 +442,7 @@ enum WeaponType_t : uint8_t {
 	WEAPON_DISTANCE,
 	WEAPON_WAND,
 	WEAPON_AMMO,
-  WEAPON_QUIVER,
+  	WEAPON_QUIVER,
 };
 
 enum Ammo_t : uint8_t {
@@ -510,6 +511,7 @@ enum item_t : uint16_t {
 	ITEM_SUPPLY_STASH_INDEX = 1, //for internal use
 	ITEM_DEPOT_NULL = 25452, // for internal use
 	ITEM_GOLD_POUCH = 26377,
+	ITEM_LOOT_POUCH = 12654,
 	TRANSFORM_BOX_ID = 26054, // for internal use
 
 	ITEM_DEPOT_I = 25453,

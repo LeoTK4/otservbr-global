@@ -2599,6 +2599,9 @@ ObjectCategory_t Game::getObjectCategory(const Item* item)
 		category = OBJECTCATEGORY_GOLD;
 	} else if (it.weaponType != WEAPON_NONE) {
 		switch (it.weaponType) {
+			case WEAPON_FIST:
+				category = OBJECTCATEGORY_FISTS;
+				break;			
 			case WEAPON_SWORD:
 				category = OBJECTCATEGORY_SWORDS;
 				break;

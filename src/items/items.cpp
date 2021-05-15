@@ -625,6 +625,8 @@ void Items::parseItemNode(const pugi::xml_node& itemNode, uint16_t id)
 				it.weaponType = WEAPON_SWORD;
 			} else if (tmpStrValue == "club") {
 				it.weaponType = WEAPON_CLUB;
+			} else if (tmpStrValue == "fist") {
+				it.weaponType = WEAPON_FIST;				
 			} else if (tmpStrValue == "axe") {
 				it.weaponType = WEAPON_AXE;
 			} else if (tmpStrValue == "shield") {
@@ -635,7 +637,7 @@ void Items::parseItemNode(const pugi::xml_node& itemNode, uint16_t id)
 				it.weaponType = WEAPON_WAND;
 			} else if (tmpStrValue == "ammunition") {
 				it.weaponType = WEAPON_AMMO;
-      } else if (tmpStrValue == "quiver") {
+      		} else if (tmpStrValue == "quiver") {
 				it.weaponType = WEAPON_QUIVER;
 			} else {
 				SPDLOG_WARN("[Items::parseItemNode] - Unknown weaponType: {}",

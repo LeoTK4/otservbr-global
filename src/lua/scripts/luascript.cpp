@@ -1682,6 +1682,7 @@ void LuaScriptInterface::registerFunctions()
 	registerEnum(ITEM_DIAMOND_ARROW)
 
 	registerEnum(ITEM_GOLD_POUCH)
+	registerEnum(ITEM_LOOT_POUCH)
 	registerEnum(ITEM_STORE_INBOX)
 
 	registerEnum(IMBUEMENT_SLOT)
@@ -1884,6 +1885,7 @@ void LuaScriptInterface::registerFunctions()
 	registerEnum(TILESTATE_SUPPORTS_HANGABLE)
 
 	registerEnum(WEAPON_NONE)
+	registerEnum(WEAPON_FIST)
 	registerEnum(WEAPON_SWORD)
 	registerEnum(WEAPON_CLUB)
 	registerEnum(WEAPON_AXE)
@@ -19034,6 +19036,7 @@ int LuaScriptInterface::luaCreateWeapon(lua_State* L)
 	switch (type) {
 		case WEAPON_SWORD:
 		case WEAPON_AXE:
+		case WEAPON_FIST:
 		case WEAPON_CLUB: {
 			WeaponMelee* weapon = new WeaponMelee(getScriptEnv()->getScriptInterface());
 			if (weapon) {
